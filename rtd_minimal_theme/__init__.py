@@ -1,14 +1,26 @@
-# Create local pygments copies for custom.js usage
-# WARNING: Must update these files whenever static/custom.js changes
-# from pygments.styles import get_all_styles
+"""
+A minimal variant on the read the docs theme with light mode dark mode toggling.
+"""
 import os
 from pygments.formatters import HtmlFormatter
-base = os.path.join('static', 'pygments')
-if not os.path.isdir(base):
-    os.mkdir(base)
-for style in ('pastie', 'monokai'):  # or get_all_styles()
-    file = os.path.join(base, style + '.css')
+
+# Declare themes. These should be kept updated with custom.js
+light_theme = 'pastie'
+dark_theme = 'monokai'
+
+# Create local pygments css files. These are used by custom.js
+base = os.path.abspath(os.path.dirname(__file__))
+folder = os.path.join(base, 'static', 'pygments')
+if not os.path.isdir(folder):
+    os.mkdir(folder)
+for style in (light_theme, dark_theme):  # or get_all_styles()
+    file = os.path.join(folder, style + '.css')
     if os.path.isfile(file):
         continue
     with open(file, 'w') as f:
         f.write(HtmlFormatter(style=style).get_style_defs('.highlight'))
+
+# Add entrypoint for theme
+# See: https://www.sphinx-doc.org/en/master/development/theming.html
+def setup(app):  # noqa: E302
+    app.add_html_theme('name_of_theme', base)
