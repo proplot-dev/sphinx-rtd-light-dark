@@ -1,0 +1,16 @@
+# VIM extras
+.session.vim
+.vimsession
+.*.sw[a-z]
+
+# PyPi stuff
+build
+dist
+.eggs
+*.egg-info
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Trashes
