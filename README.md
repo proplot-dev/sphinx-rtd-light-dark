@@ -12,8 +12,9 @@ demonstrations of the theme.
 Theme Usage
 -----------
 
-In your `conf.py` file, add the entry ``'sphinx_rtd_light_dark'`` to the `extensions` list,
-and set the variable `html_theme` to ``'sphinx_rtd_light_dark'``. Example `conf.py`:
+Install with `pip install sphinx-rtd-light-dark`. Then in your `conf.py` file,
+add the entry ``'sphinx_rtd_light_dark'`` to the `extensions` list,
+and set `html_theme` to ``'sphinx_rtd_light_dark'``. Example `conf.py`:
 
 ```python
 extensions = [
