@@ -3,8 +3,8 @@
 .vimsession
 .*.sw[a-z]
 
-# PyPi stuff
-build
+# Build stuff
+pygments
 dist
 .eggs
 *.egg-info
