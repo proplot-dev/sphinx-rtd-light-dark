@@ -5,6 +5,7 @@
 
 # Build stuff
 pygments
+build
 dist
 .eggs
 *.egg-info
