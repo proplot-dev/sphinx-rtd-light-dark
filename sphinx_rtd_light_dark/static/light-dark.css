@@ -504,19 +504,19 @@ hr {
 /* Dark mode toggle switcher */
 /* See: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 /* Color changes cannot be in :before tag or they won't apply to padding */
-#lightdark-li {
+#light-dark-li {
   float: right;
 }
-#lightdark-label {
+#light-dark-label {
   border: 0;
   margin: 0;
   padding: 0;
   font-size: 100%;
 }
-#lightdark-label input {
+#light-dark-label input {
   display: none; /* hides the check box */
 }
-#lightdark-label div.btn-neutral {
+#light-dark-label div.btn-neutral {
   padding: 0;
   margin-left: 5px;
   border-width: 5px;
@@ -526,23 +526,23 @@ hr {
   transition: all 0.1s linear;
   overflow: hidden;
 }
-#lightdark-label:hover div.btn-neutral,
-#lightdark-label input:checked + div.btn-neutral {
+#light-dark-label:hover div.btn-neutral,
+#light-dark-label input:checked + div.btn-neutral {
   color: var(--light-color) !important;
   border-color: var(--dark-color) !important;
   background-color: var(--dark-color) !important;
 }
-#lightdark-label div.btn-neutral,
-#lightdark-label:hover input:checked + div.btn-neutral {
+#light-dark-label div.btn-neutral,
+#light-dark-label:hover input:checked + div.btn-neutral {
   color: var(--dark-color) !important;
   border-color: var(--light-color) !important;
   background-color: var(--light-color) !important;
 }
-#lightdark-label:hover div.btn-neutral:before,
-#lightdark-label input:checked + div.btn-neutral:before {
+#light-dark-label:hover div.btn-neutral:before,
+#light-dark-label input:checked + div.btn-neutral:before {
   content: "Dark mode";
 }
-#lightdark-label div.btn-neutral:before,
-#lightdark-label:hover input:checked + div.btn-neutral:before {
+#light-dark-label div.btn-neutral:before,
+#light-dark-label:hover input:checked + div.btn-neutral:before {
   content: "Light mode";
 }

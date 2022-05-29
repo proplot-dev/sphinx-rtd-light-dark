@@ -8,17 +8,17 @@
   Using css_files: https://stackoverflow.com/a/32079202/4970632
   * Critical to put dark mode toggle script at footer after HTML
     classes are already defined.
-  * Critical to use pathto() instead of "_static/minimal.css" because auto
-    generated docs are in "api" subfolder so link becomes invalid!
+  * Critical to use pathto() instead of "_static/light-dark.css" because
+    auto generated docs are in "api" subfolder so link becomes invalid!
   * Use extrahead because it is recommended in templating instructions,
     css_files method does *not require* pathto() but do not understand why
 -->
 {% block extrahead %}
   <link rel="stylesheet" href="{{ pathto("_static/pygments/default.css", True) }}" type="text/css" id="pygments-style">
-  <link rel="stylesheet" href="{{ pathto("_static/minimal.css", True) }}" type="text/css">
+  <link rel="stylesheet" href="{{ pathto("_static/light-dark.css", True) }}" type="text/css">
   {{ super() }}
 {% endblock %}
 {% block document %}
-  <script type="text/javascript" src={{ pathto("_static/minimal.js", True) }}></script>
+  <script type="text/javascript" src={{ pathto("_static/light-dark.js", True) }}></script>
   {{ super() }}
 {% endblock %}

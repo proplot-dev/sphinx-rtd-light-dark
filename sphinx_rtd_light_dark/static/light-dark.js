@@ -6,7 +6,7 @@
  * Best dark themes: monokai, paraiso-dark
  */
 var regex = /(.*)\/.*(\.css$)/i
-const toggleSwitch = document.getElementById('lightdark-checkbox');
+const toggleSwitch = document.getElementById('light-dark-checkbox');
 const pygmentsLink = document.getElementById('pygments-style');
 function lightToggle() {
     document.documentElement.setAttribute('data-theme', 'light');
