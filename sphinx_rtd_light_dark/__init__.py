@@ -1,5 +1,5 @@
 """
-A minimal variant on the read the docs theme with light mode dark mode toggling.
+A clean variant on the read the docs theme with light mode dark mode toggling.
 """
 import os
 from pygments.formatters import HtmlFormatter
