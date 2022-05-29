@@ -23,4 +23,4 @@ for style in (light_theme, dark_theme):  # or get_all_styles()
 # Add entrypoint for theme
 # See: https://www.sphinx-doc.org/en/master/development/theming.html
 def setup(app):  # noqa: E302
-    app.add_html_theme('name_of_theme', base)
+    app.add_html_theme('rtd_minimal_theme', base)
