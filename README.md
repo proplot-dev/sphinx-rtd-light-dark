@@ -1,23 +1,22 @@
 Read the Docs Light-Dark Theme
 ------------------------------
 
-[![pypi](https://img.shields.io/pypi/v/sphinx-rtd-light-dark?color=83%20197%2052)](https://pypi.org/project/proplot/)
+[![pypi](https://img.shields.io/pypi/v/sphinx-rtd-light-dark?color=83%20197%2052)](https://pypi.org/project/sphinx-rtd-light-dark/)
 [![licence](https://img.shields.io/github/license/lukelbd/sphinx-rtd-light-dark.svg)](LICENSE.txt)
 
 A clean variant of the [read the docs theme](https://github.com/readthedocs/sphinx_rtd_theme)
 with grayscale styling and optional light mode / dark mode toggling.
-This theme is currently used with the [proplot](https://github.com/lukelbd/proplot.git)
-and [climopy](https://github.com/lukelbd/climopy.git) projects.
-Please refer to the published [proplot](https://proplot.readthedocs.io)
-and [climopy](https://climopy.readthedocs.io) documentation for
-demonstrations of the theme.
+This theme is currently used with the [proplot](https://proplot.readthedocs.io)
+and [climopy](https://climopy.readthedocs.io) projects.
 
 Theme Usage
 -----------
 
 Install with `pip install sphinx-rtd-light-dark`. Then in your `conf.py` file,
 add the entry ``'sphinx_rtd_light_dark'`` to the `extensions` list,
-and set `html_theme` to ``'sphinx_rtd_light_dark'``. Example `conf.py`:
+and set `html_theme` to ``'sphinx_rtd_light_dark'``.
+
+Example `conf.py`:
 
 ```python
 extensions = [
