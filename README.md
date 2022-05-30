@@ -1,6 +1,9 @@
 Read the Docs Light-Dark Theme
 ------------------------------
 
+[![pypi](https://img.shields.io/pypi/v/sphinx-rtd-light-dark?color=83%20197%2052)](https://pypi.org/project/proplot/)
+[![licence](https://img.shields.io/github/license/lukelbd/sphinx-rtd-light-dark.svg)](LICENSE.txt)
+
 A clean variant of the [read the docs theme](https://github.com/readthedocs/sphinx_rtd_theme)
 with grayscale styling and optional light mode / dark mode toggling.
 This theme is currently used with the [proplot](https://github.com/lukelbd/proplot.git)
